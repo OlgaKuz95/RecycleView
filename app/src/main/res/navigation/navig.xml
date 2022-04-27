@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navig"
+    app:startDestination="@id/feedFragment1">
+
+    <fragment
+        android:id="@+id/feedFragment1"
+        android:name="ru.bignerdranch.android.mygittest.activity.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" />
+
+    <fragment
+        android:id="@+id/feedFragment2"
+        android:name="ru.bignerdranch.android.mygittest.activity.FeedFragment"
+        android:label="repo_loader"
+        tools:layout="@layout/repo_loader" />
+    <fragment
+        android:id="@+id/feedFragment3"
+        android:name="ru.bignerdranch.android.mygittest.activity.FeedFragment"
+        android:label="repo"
+        tools:layout="@layout/repo_" />
+
+    <fragment
+        android:id="@+id/feedFragment4"
+        android:name="ru.bignerdranch.android.mygittest.activity.FeedFragment"
+        android:label="detail"
+        tools:layout="@layout/detail" />
+
+    <fragment
+        android:id="@+id/feedFragment5"
+        android:name="ru.bignerdranch.android.mygittest.activity.FeedFragment"
+        android:label="detail_loader"
+        tools:layout="@layout/detail_loader" />
+
+</navigation>

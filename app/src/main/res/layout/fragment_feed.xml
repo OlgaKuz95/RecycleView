@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.FeedFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/system_bar_"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/system_bar_"
+        android:clipToOutline="true"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/rectangle_7"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toTopOf="@id/system_bar_"
+        android:background="@drawable/rectangle_7"
+        app:layout_constraintEnd_toStartOf="@id/rectangle_2"
+        tools:ignore="MissingConstraints"
+
+        />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toTopOf="@id/system_bar_"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintEnd_toStartOf="@id/triangle"
+        tools:ignore="MissingConstraints"
+
+        />
+
+
+    <View
+        android:id="@+id/triangle"
+        android:layout_width="12dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toTopOf="@id/system_bar_"
+        android:background="@drawable/triangle"
+        app:layout_constraintEnd_toEndOf="@id/system_bar_"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/label_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="97.88dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="6.91dp"
+        android:alpha="0.5"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/label_text"
+        android:textAppearance="@style/label_text"
+        app:layout_constraintBottom_toTopOf="@+id/input_line"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/input_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="480.09dp"
+        android:background="@drawable/input_line"
+        android:contentDescription="@string/todo"
+        app:layout_constraintTop_toBottomOf="@+id/vector"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/vector"
+        android:layout_width="78dp"
+        android:layout_height="76.12dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="145.79dp"
+        android:background="@drawable/vector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/input_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndtOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/hover_press"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="17dp"
+        android:alpha="0.12"
+        android:background="@drawable/hover_press"
+        app:layout_constraintBottom_toTopOf="@id/navbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/label"
+        android:textAppearance="@style/label"
+        app:layout_constraintBottom_toBottomOf="@+id/hover_press"
+        app:layout_constraintStart_toStartOf="@id/hover_press"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navbar"
+        android:rotation="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/oval"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="171.81dp"
+        android:layout_marginEnd="172.56dp"
+        android:layout_marginBottom="13.83dp"
+        android:background="@drawable/ic_baseline_radio_button_checked_24"
+        app:layout_constraintBottom_toBottomOf="@id/navbar"
+        app:layout_constraintEnd_toEndOf="@id/navbar"
+        app:layout_constraintStart_toStartOf="@id/navbar"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="11.5dp"
+        android:layout_height="11.37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="273.91dp"
+        android:layout_marginBottom="15.6dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/navbar"
+        app:layout_constraintEnd_toEndOf="@id/navbar"
+        app:layout_constraintStart_toStartOf="@id/navbar"
+        app:layout_goneMarginTop="15.6dp"
+
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/triangle_1"
+        android:layout_width="11.45dp"
+        android:layout_height="10.38dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="75.58dp"
+        android:layout_marginBottom="15.6dp"
+        android:background="@drawable/triangle_1"
+        android:rotation="-90"
+        app:layout_constraintBottom_toBottomOf="@id/navbar"
+        app:layout_constraintStart_toStartOf="@id/navbar"
+        app:layout_goneMarginTop="15.6dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

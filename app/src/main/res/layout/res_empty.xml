@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.FeedFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/system_bar_"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@drawable/system_bar_"
+        android:clipToOutline="true"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/rectangle_7"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rectangle_7"
+        app:layout_constraintEnd_toStartOf="@id/rectangle_2"
+        app:layout_constraintTop_toTopOf="@id/system_bar_"
+        tools:ignore="MissingConstraints"
+
+        />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintEnd_toStartOf="@id/triangle"
+        app:layout_constraintTop_toTopOf="@id/system_bar_"
+        tools:ignore="MissingConstraints"
+
+        />
+
+
+    <View
+        android:id="@+id/triangle"
+        android:layout_width="12dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/triangle"
+        app:layout_constraintEnd_toEndOf="@id/system_bar_"
+        app:layout_constraintTop_toTopOf="@id/system_bar_"
+        tools:ignore="MissingConstraints" />
+
+
+    <RelativeLayout
+        android:id="@+id/app_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/ic_app_bar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/system_bar_"
+        app:layout_constraintTop_toBottomOf="@id/system_bar_"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/vector_1"
+        android:layout_width="22dp"
+        android:layout_height="17.98dp"
+        android:layout_marginTop="19.01dp"
+        android:layout_marginEnd="19.01dp"
+        android:layout_marginBottom="19.01dp"
+        android:background="@drawable/ic_vector__1_"
+        app:layout_constraintBottom_toBottomOf="@id/app_bar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/app_bar_bg"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="17dp"
+        android:gravity="top"
+        android:text="@string/page_title"
+        android:textAppearance="@style/page_title"
+        app:layout_constraintBottom_toBottomOf="@id/app_bar_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/app_bar_bg"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/vector_3"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/ic_empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="25.69dp"
+        android:layout_marginEnd="156dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="9sp"
+        android:text="@string/empty"
+        android:textAppearance="@style/empty"
+        android:translationY="-4.62sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vector_3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/no_reposito"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vector_3"
+        android:text="@string/no_reposito"
+        android:textAppearance="@style/no_reposito"
+        android:lineSpacingExtra="4sp"
+        android:translationY="-1.8sp"
+        android:gravity="center_horizontal|top"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/hover_press_1"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="17dp"
+        android:alpha="0.12"
+        android:background="@drawable/hover_press"
+        app:layout_constraintBottom_toTopOf="@id/navbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/label_2"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/label_2"
+        android:textAppearance="@style/label_2"
+        app:layout_constraintBottom_toBottomOf="@+id/hover_press_1"
+        app:layout_constraintStart_toStartOf="@id/hover_press_1"
+        tools:ignore="MissingConstraints" />
+
+
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@drawable/navbar"
+        android:rotation="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/oval"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="171.81dp"
+        android:layout_marginEnd="172.56dp"
+        android:layout_marginBottom="13.83dp"
+        android:background="@drawable/ic_baseline_radio_button_checked_24"
+        app:layout_constraintBottom_toBottomOf="@id/navbar"
+        app:layout_constraintEnd_toEndOf="@id/navbar"
+        app:layout_constraintStart_toStartOf="@id/navbar"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="11.5dp"
+        android:layout_height="11.37dp"
+        android:layout_marginStart="273.91dp"
+        android:layout_marginBottom="15.6dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/navbar"
+        app:layout_constraintEnd_toEndOf="@id/navbar"
+        app:layout_constraintStart_toStartOf="@id/navbar"
+        app:layout_goneMarginTop="15.6dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/triangle_1"
+        android:layout_width="11.45dp"
+        android:layout_height="10.38dp"
+        android:layout_marginStart="75.58dp"
+        android:layout_marginBottom="15.6dp"
+        android:background="@drawable/triangle_1"
+        android:rotation="-90"
+        app:layout_constraintBottom_toBottomOf="@id/navbar"
+        app:layout_constraintStart_toStartOf="@id/navbar"
+        app:layout_goneMarginTop="15.6dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

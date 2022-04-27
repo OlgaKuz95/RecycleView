@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My gitTest</string>
+    <string name="label_text">
+
+Personal access token
+</string>
+    <string name="todo" />
+    <string name="label">Sign In</string>
+    <string name="page_title">Repositories</string>
+    <string name="label_1">Retry</string>
+    <string name="connection_">Connection error</string>
+    <string name="check_your_">Check your Internet connection</string>
+    <string name="empty">Empty</string>
+    <string name="no_reposito">No repositories at the moment</string>
+    <string name="label_2" >REFRESH</string>
+    <string name="something_e">Something error</string>
+    <string name="check_your_1">Check your something</string>
+    <string name="page_title_1" />
+    <string name="no_readme_m" >No README.md</string>
+    <string name="github_com_" />
+    <string name="license">License</string>
+    <string name="veb_ser" >Apache-2.0</string>
+    <string name="some_id" />
+    <string name="stars">stars</string>
+    <string name="some_id_1" />
+    <string name="forks">forks</string>
+    <string name="some_id_2" />
+    <string name="watchers" >watchers</string>
+    <string name="mobile_kotl">Mobile Kotlin resources</string>
+    <string name="this_is_a_k" />
+    <string name="features" />
+    <string name="strings_plu" />
+    <string name="text" >moko-web3</string>
+    <string name="secondary_t">Ethereum Web3 implementation for mobile (android &amp; ios) Kotlin Multiplatform development</string>
+</resources>
